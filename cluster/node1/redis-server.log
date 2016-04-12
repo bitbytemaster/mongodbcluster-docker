@@ -1,0 +1,1979 @@
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 20
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+20:M 12 Apr 01:35:44.849 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+20:M 12 Apr 01:35:44.849 # Server started, Redis version 3.0.6
+20:M 12 Apr 01:35:44.849 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+20:M 12 Apr 01:35:44.849 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+20:M 12 Apr 01:35:44.849 * DB loaded from disk: 0.000 seconds
+20:M 12 Apr 01:35:44.849 * The server is now ready to accept connections on port 6380
+20:M 12 Apr 01:35:47.848 * Slave 127.0.0.1:6381 asks for synchronization
+20:M 12 Apr 01:35:47.848 * Full resync requested by slave 127.0.0.1:6381
+20:M 12 Apr 01:35:47.848 * Starting BGSAVE for SYNC with target: disk
+20:M 12 Apr 01:35:47.849 * Background saving started by pid 28
+28:C 12 Apr 01:35:47.906 * DB saved on disk
+28:C 12 Apr 01:35:47.906 * RDB: 6 MB of memory used by copy-on-write
+20:M 12 Apr 01:35:47.953 * Background saving terminated with success
+20:M 12 Apr 01:35:47.953 * Synchronization with slave 127.0.0.1:6381 succeeded
+20:M 12 Apr 01:35:51.850 * Slave 127.0.0.1:6382 asks for synchronization
+20:M 12 Apr 01:35:51.850 * Full resync requested by slave 127.0.0.1:6382
+20:M 12 Apr 01:35:51.850 * Starting BGSAVE for SYNC with target: disk
+20:M 12 Apr 01:35:51.851 * Background saving started by pid 34
+34:C 12 Apr 01:35:51.887 * DB saved on disk
+34:C 12 Apr 01:35:51.888 * RDB: 8 MB of memory used by copy-on-write
+20:M 12 Apr 01:35:51.959 * Background saving terminated with success
+20:M 12 Apr 01:35:51.959 * Synchronization with slave 127.0.0.1:6382 succeeded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 13
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+13:M 12 Apr 01:46:49.891 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+13:M 12 Apr 01:46:49.892 # Server started, Redis version 3.0.6
+13:M 12 Apr 01:46:49.892 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+13:M 12 Apr 01:46:49.892 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+13:M 12 Apr 01:46:49.892 * DB loaded from disk: 0.000 seconds
+13:M 12 Apr 01:46:49.892 * The server is now ready to accept connections on port 6380
+13:M 12 Apr 01:46:49.894 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 01:46:49.894 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 01:46:49.894 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 01:46:49.895 * Background saving started by pid 22
+13:M 12 Apr 01:46:49.897 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 01:46:49.897 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 01:46:49.897 * Waiting for end of BGSAVE for SYNC
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 13
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+13:M 12 Apr 01:48:34.993 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+13:M 12 Apr 01:48:34.993 # Server started, Redis version 3.0.6
+13:M 12 Apr 01:48:34.994 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+13:M 12 Apr 01:48:34.994 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+13:M 12 Apr 01:48:34.994 * DB loaded from disk: 0.000 seconds
+13:M 12 Apr 01:48:34.994 * The server is now ready to accept connections on port 6380
+13:M 12 Apr 01:48:34.997 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 01:48:34.997 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 01:48:34.997 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 01:48:34.998 * Background saving started by pid 22
+13:M 12 Apr 01:48:35.000 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 01:48:35.000 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 01:48:35.000 * Waiting for end of BGSAVE for SYNC
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 12
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+12:M 12 Apr 02:00:48.075 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+12:M 12 Apr 02:00:48.075 # Server started, Redis version 3.0.6
+12:M 12 Apr 02:00:48.075 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+12:M 12 Apr 02:00:48.075 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+12:M 12 Apr 02:00:48.075 * The server is now ready to accept connections on port 6380
+12:M 12 Apr 02:00:51.082 * Slave 127.0.0.1:6381 asks for synchronization
+12:M 12 Apr 02:00:51.082 * Full resync requested by slave 127.0.0.1:6381
+12:M 12 Apr 02:00:51.082 * Starting BGSAVE for SYNC with target: disk
+12:M 12 Apr 02:00:51.082 * Background saving started by pid 21
+21:C 12 Apr 02:00:51.107 * DB saved on disk
+21:C 12 Apr 02:00:51.108 * RDB: 6 MB of memory used by copy-on-write
+12:M 12 Apr 02:00:51.179 * Background saving terminated with success
+12:M 12 Apr 02:00:51.179 * Synchronization with slave 127.0.0.1:6381 succeeded
+12:M 12 Apr 02:00:55.086 * Slave 127.0.0.1:6382 asks for synchronization
+12:M 12 Apr 02:00:55.086 * Full resync requested by slave 127.0.0.1:6382
+12:M 12 Apr 02:00:55.086 * Starting BGSAVE for SYNC with target: disk
+12:M 12 Apr 02:00:55.087 * Background saving started by pid 27
+27:C 12 Apr 02:00:55.114 * DB saved on disk
+27:C 12 Apr 02:00:55.114 * RDB: 8 MB of memory used by copy-on-write
+12:M 12 Apr 02:00:55.186 * Background saving terminated with success
+12:M 12 Apr 02:00:55.186 * Synchronization with slave 127.0.0.1:6382 succeeded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 12
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+12:M 12 Apr 02:30:53.973 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+12:M 12 Apr 02:30:53.973 # Server started, Redis version 3.0.6
+12:M 12 Apr 02:30:53.973 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+12:M 12 Apr 02:30:53.973 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+12:M 12 Apr 02:30:53.973 * DB loaded from disk: 0.000 seconds
+12:M 12 Apr 02:30:53.973 * The server is now ready to accept connections on port 6380
+12:M 12 Apr 02:30:57.979 * Slave 127.0.0.1:6381 asks for synchronization
+12:M 12 Apr 02:30:57.979 * Full resync requested by slave 127.0.0.1:6381
+12:M 12 Apr 02:30:57.979 * Starting BGSAVE for SYNC with target: disk
+12:M 12 Apr 02:30:57.979 * Background saving started by pid 21
+21:C 12 Apr 02:30:58.009 * DB saved on disk
+21:C 12 Apr 02:30:58.009 * RDB: 6 MB of memory used by copy-on-write
+12:M 12 Apr 02:30:58.078 * Background saving terminated with success
+12:M 12 Apr 02:30:58.078 * Synchronization with slave 127.0.0.1:6381 succeeded
+12:M 12 Apr 02:31:00.984 * Slave 127.0.0.1:6382 asks for synchronization
+12:M 12 Apr 02:31:00.984 * Full resync requested by slave 127.0.0.1:6382
+12:M 12 Apr 02:31:00.984 * Starting BGSAVE for SYNC with target: disk
+12:M 12 Apr 02:31:00.985 * Background saving started by pid 27
+27:C 12 Apr 02:31:01.026 * DB saved on disk
+27:C 12 Apr 02:31:01.027 * RDB: 6 MB of memory used by copy-on-write
+12:M 12 Apr 02:31:01.082 * Background saving terminated with success
+12:M 12 Apr 02:31:01.083 * Synchronization with slave 127.0.0.1:6382 succeeded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 12
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+12:M 12 Apr 02:39:06.633 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+12:M 12 Apr 02:39:06.633 # Server started, Redis version 3.0.6
+12:M 12 Apr 02:39:06.633 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+12:M 12 Apr 02:39:06.633 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+12:M 12 Apr 02:39:06.633 * DB loaded from disk: 0.000 seconds
+12:M 12 Apr 02:39:06.633 * The server is now ready to accept connections on port 6380
+12:M 12 Apr 02:39:09.639 * Slave 127.0.0.1:6381 asks for synchronization
+12:M 12 Apr 02:39:09.639 * Full resync requested by slave 127.0.0.1:6381
+12:M 12 Apr 02:39:09.639 * Starting BGSAVE for SYNC with target: disk
+12:M 12 Apr 02:39:09.640 * Background saving started by pid 21
+21:C 12 Apr 02:39:09.668 * DB saved on disk
+21:C 12 Apr 02:39:09.669 * RDB: 6 MB of memory used by copy-on-write
+12:M 12 Apr 02:39:09.739 * Background saving terminated with success
+12:M 12 Apr 02:39:09.739 * Synchronization with slave 127.0.0.1:6381 succeeded
+12:M 12 Apr 02:39:12.644 * Slave 127.0.0.1:6382 asks for synchronization
+12:M 12 Apr 02:39:12.644 * Full resync requested by slave 127.0.0.1:6382
+12:M 12 Apr 02:39:12.644 * Starting BGSAVE for SYNC with target: disk
+12:M 12 Apr 02:39:12.645 * Background saving started by pid 27
+27:C 12 Apr 02:39:12.667 * DB saved on disk
+27:C 12 Apr 02:39:12.668 * RDB: 6 MB of memory used by copy-on-write
+12:M 12 Apr 02:39:12.743 * Background saving terminated with success
+12:M 12 Apr 02:39:12.743 * Synchronization with slave 127.0.0.1:6382 succeeded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 13
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+13:M 12 Apr 02:49:24.870 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+13:M 12 Apr 02:49:24.870 # Server started, Redis version 3.0.6
+13:M 12 Apr 02:49:24.870 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+13:M 12 Apr 02:49:24.870 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+13:M 12 Apr 02:49:24.870 * DB loaded from disk: 0.000 seconds
+13:M 12 Apr 02:49:24.870 * The server is now ready to accept connections on port 6380
+13:M 12 Apr 02:49:28.876 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:49:28.876 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:49:28.876 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:49:28.877 * Background saving started by pid 22
+22:C 12 Apr 02:49:28.903 * DB saved on disk
+22:C 12 Apr 02:49:28.903 * RDB: 6 MB of memory used by copy-on-write
+13:M 12 Apr 02:49:28.978 * Background saving terminated with success
+13:M 12 Apr 02:49:28.978 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:49:30.881 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:49:30.881 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:49:30.881 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:49:30.882 * Background saving started by pid 28
+28:C 12 Apr 02:49:30.902 * DB saved on disk
+28:C 12 Apr 02:49:30.902 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:49:30.981 * Background saving terminated with success
+13:M 12 Apr 02:49:30.981 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:49:46.948 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:49:46.948 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:49:47.910 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:49:47.910 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:49:47.910 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:49:47.911 * Background saving started by pid 53
+13:M 12 Apr 02:49:47.912 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:49:47.912 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:49:47.912 * Waiting for end of BGSAVE for SYNC
+53:C 12 Apr 02:49:47.945 * DB saved on disk
+53:C 12 Apr 02:49:47.945 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:49:48.007 * Background saving terminated with success
+13:M 12 Apr 02:49:48.007 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:49:48.007 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:50:04.190 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:50:04.191 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:50:04.935 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:50:04.935 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:50:04.935 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:50:04.935 * Background saving started by pid 56
+13:M 12 Apr 02:50:04.941 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:50:04.941 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:50:04.941 * Waiting for end of BGSAVE for SYNC
+56:C 12 Apr 02:50:04.964 * DB saved on disk
+56:C 12 Apr 02:50:04.964 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:50:05.034 * Background saving terminated with success
+13:M 12 Apr 02:50:05.034 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:50:05.034 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:50:17.003 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:50:17.003 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:50:17.958 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:50:17.958 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:50:17.958 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:50:17.959 * Background saving started by pid 58
+13:M 12 Apr 02:50:17.966 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:50:17.966 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:50:17.966 * Waiting for end of BGSAVE for SYNC
+58:C 12 Apr 02:50:18.020 * DB saved on disk
+58:C 12 Apr 02:50:18.020 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:50:18.058 * Background saving terminated with success
+13:M 12 Apr 02:50:18.058 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:50:18.058 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:50:34.269 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:50:34.269 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:50:34.990 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:50:34.990 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:50:34.990 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:50:34.991 * Background saving started by pid 61
+13:M 12 Apr 02:50:34.996 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:50:34.997 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:50:34.997 * Waiting for end of BGSAVE for SYNC
+61:C 12 Apr 02:50:35.014 * DB saved on disk
+61:C 12 Apr 02:50:35.015 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:50:35.087 * Background saving terminated with success
+13:M 12 Apr 02:50:35.087 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:50:35.087 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:50:47.140 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:50:47.140 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:50:48.009 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:50:48.009 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:50:48.009 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:50:48.010 * Background saving started by pid 62
+13:M 12 Apr 02:50:48.018 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:50:48.018 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:50:48.018 * Waiting for end of BGSAVE for SYNC
+62:C 12 Apr 02:50:48.052 * DB saved on disk
+62:C 12 Apr 02:50:48.052 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:50:48.106 * Background saving terminated with success
+13:M 12 Apr 02:50:48.106 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:50:48.106 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:51:04.382 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:51:04.382 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:51:05.031 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:51:05.031 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:51:05.031 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:51:05.032 * Background saving started by pid 66
+13:M 12 Apr 02:51:05.038 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:51:05.038 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:51:05.038 * Waiting for end of BGSAVE for SYNC
+66:C 12 Apr 02:51:05.064 * DB saved on disk
+66:C 12 Apr 02:51:05.065 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:51:05.130 * Background saving terminated with success
+13:M 12 Apr 02:51:05.130 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:51:05.130 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:51:17.253 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:51:17.253 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:51:18.049 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:51:18.050 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:51:18.050 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:51:18.050 * Background saving started by pid 67
+13:M 12 Apr 02:51:18.063 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:51:18.063 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:51:18.063 * Waiting for end of BGSAVE for SYNC
+67:C 12 Apr 02:51:18.077 * DB saved on disk
+67:C 12 Apr 02:51:18.077 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:51:18.149 * Background saving terminated with success
+13:M 12 Apr 02:51:18.149 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:51:18.149 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:51:34.619 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:51:34.620 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:51:35.077 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:51:35.077 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:51:35.077 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:51:35.077 * Background saving started by pid 68
+13:M 12 Apr 02:51:35.084 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:51:35.084 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:51:35.084 * Waiting for end of BGSAVE for SYNC
+68:C 12 Apr 02:51:35.104 * DB saved on disk
+68:C 12 Apr 02:51:35.105 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:51:35.175 * Background saving terminated with success
+13:M 12 Apr 02:51:35.176 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:51:35.176 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:51:47.501 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:51:47.501 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:51:48.097 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:51:48.097 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:51:48.097 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:51:48.098 * Background saving started by pid 69
+13:M 12 Apr 02:51:48.103 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:51:48.103 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:51:48.103 * Waiting for end of BGSAVE for SYNC
+69:C 12 Apr 02:51:48.134 * DB saved on disk
+69:C 12 Apr 02:51:48.134 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:51:48.191 * Background saving terminated with success
+13:M 12 Apr 02:51:48.191 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:51:48.191 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:52:04.872 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:52:04.872 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:52:05.125 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:52:05.125 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:52:05.125 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:52:05.125 * Background saving started by pid 70
+13:M 12 Apr 02:52:05.127 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:52:05.127 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:52:05.127 * Waiting for end of BGSAVE for SYNC
+70:C 12 Apr 02:52:05.163 * DB saved on disk
+70:C 12 Apr 02:52:05.163 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:52:05.214 * Background saving terminated with success
+13:M 12 Apr 02:52:05.214 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:52:05.214 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:52:17.601 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:52:17.602 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:52:18.140 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:52:18.140 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:52:18.140 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:52:18.141 * Background saving started by pid 71
+13:M 12 Apr 02:52:18.145 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:52:18.145 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:52:18.146 * Waiting for end of BGSAVE for SYNC
+71:C 12 Apr 02:52:18.167 * DB saved on disk
+71:C 12 Apr 02:52:18.167 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:52:18.238 * Background saving terminated with success
+13:M 12 Apr 02:52:18.238 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:52:18.238 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:52:35.074 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:52:35.074 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:52:35.163 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:52:35.163 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:52:35.163 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:52:35.164 * Background saving started by pid 72
+13:M 12 Apr 02:52:35.171 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:52:35.171 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:52:35.171 * Waiting for end of BGSAVE for SYNC
+72:C 12 Apr 02:52:35.195 * DB saved on disk
+72:C 12 Apr 02:52:35.195 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:52:35.261 * Background saving terminated with success
+13:M 12 Apr 02:52:35.262 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:52:35.262 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:52:47.708 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:52:47.708 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:52:48.184 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:52:48.184 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:52:48.184 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:52:48.185 * Background saving started by pid 73
+13:M 12 Apr 02:52:48.197 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:52:48.197 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:52:48.197 * Waiting for end of BGSAVE for SYNC
+73:C 12 Apr 02:52:48.258 * DB saved on disk
+73:C 12 Apr 02:52:48.258 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:52:48.278 * Background saving terminated with success
+13:M 12 Apr 02:52:48.278 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:52:48.279 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:53:05.193 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:53:05.193 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:53:05.214 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:53:05.214 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:53:05.214 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:53:05.215 * Background saving started by pid 74
+13:M 12 Apr 02:53:05.223 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:53:05.223 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:53:05.223 * Waiting for end of BGSAVE for SYNC
+74:C 12 Apr 02:53:05.238 * DB saved on disk
+74:C 12 Apr 02:53:05.238 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:53:05.306 * Background saving terminated with success
+13:M 12 Apr 02:53:05.306 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:53:05.306 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:53:17.839 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:53:17.839 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:53:18.236 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:53:18.236 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:53:18.236 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:53:18.236 * Background saving started by pid 75
+13:M 12 Apr 02:53:18.251 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:53:18.251 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:53:18.251 * Waiting for end of BGSAVE for SYNC
+75:C 12 Apr 02:53:18.277 * DB saved on disk
+75:C 12 Apr 02:53:18.277 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:53:18.327 * Background saving terminated with success
+13:M 12 Apr 02:53:18.327 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:53:18.327 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:53:35.347 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:53:35.347 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:53:36.275 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:53:36.275 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:53:36.275 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:53:36.276 * Background saving started by pid 76
+13:M 12 Apr 02:53:36.278 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:53:36.278 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:53:36.278 * Waiting for end of BGSAVE for SYNC
+76:C 12 Apr 02:53:36.306 * DB saved on disk
+76:C 12 Apr 02:53:36.307 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:53:36.360 * Background saving terminated with success
+13:M 12 Apr 02:53:36.360 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:53:36.360 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:53:47.977 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:53:47.977 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:53:48.294 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:53:48.294 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:53:48.294 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:53:48.294 * Background saving started by pid 77
+13:M 12 Apr 02:53:48.301 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:53:48.301 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:53:48.301 * Waiting for end of BGSAVE for SYNC
+77:C 12 Apr 02:53:48.319 * DB saved on disk
+77:C 12 Apr 02:53:48.320 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:53:48.377 * Background saving terminated with success
+13:M 12 Apr 02:53:48.377 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:53:48.377 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:54:05.447 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:54:05.447 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:54:06.322 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:54:06.322 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:54:06.322 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:54:06.323 * Background saving started by pid 78
+13:M 12 Apr 02:54:06.328 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:54:06.328 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:54:06.328 * Waiting for end of BGSAVE for SYNC
+78:C 12 Apr 02:54:06.356 * DB saved on disk
+78:C 12 Apr 02:54:06.356 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:54:06.401 * Background saving terminated with success
+13:M 12 Apr 02:54:06.401 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:54:06.401 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:54:18.173 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:54:18.173 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:54:18.342 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:54:18.342 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:54:18.342 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:54:18.343 * Background saving started by pid 79
+13:M 12 Apr 02:54:18.344 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:54:18.344 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:54:18.344 * Waiting for end of BGSAVE for SYNC
+79:C 12 Apr 02:54:18.370 * DB saved on disk
+79:C 12 Apr 02:54:18.370 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:54:18.417 * Background saving terminated with success
+13:M 12 Apr 02:54:18.417 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:54:18.417 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:54:35.491 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:54:35.491 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:54:36.366 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:54:36.366 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:54:36.366 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:54:36.367 * Background saving started by pid 80
+13:M 12 Apr 02:54:36.371 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:54:36.371 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:54:36.371 * Waiting for end of BGSAVE for SYNC
+80:C 12 Apr 02:54:36.389 * DB saved on disk
+80:C 12 Apr 02:54:36.389 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:54:36.440 * Background saving terminated with success
+13:M 12 Apr 02:54:36.440 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:54:36.440 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:54:48.361 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:54:48.361 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:54:48.381 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:54:48.381 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:54:48.381 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:54:48.382 * Background saving started by pid 81
+13:M 12 Apr 02:54:48.388 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:54:48.388 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:54:48.388 * Waiting for end of BGSAVE for SYNC
+81:C 12 Apr 02:54:48.402 * DB saved on disk
+81:C 12 Apr 02:54:48.402 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:54:48.461 * Background saving terminated with success
+13:M 12 Apr 02:54:48.462 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:54:48.462 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:55:05.764 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:55:05.765 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:55:06.407 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:55:06.407 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:55:06.407 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:55:06.408 * Background saving started by pid 82
+13:M 12 Apr 02:55:06.415 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:55:06.415 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:55:06.415 * Waiting for end of BGSAVE for SYNC
+82:C 12 Apr 02:55:06.447 * DB saved on disk
+82:C 12 Apr 02:55:06.448 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:55:06.486 * Background saving terminated with success
+13:M 12 Apr 02:55:06.486 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:55:06.487 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:55:18.527 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:55:18.527 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:55:19.433 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:55:19.433 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:55:19.433 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:55:19.433 * Background saving started by pid 83
+13:M 12 Apr 02:55:19.435 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:55:19.435 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:55:19.435 * Waiting for end of BGSAVE for SYNC
+83:C 12 Apr 02:55:19.452 * DB saved on disk
+83:C 12 Apr 02:55:19.452 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:55:19.502 * Background saving terminated with success
+13:M 12 Apr 02:55:19.502 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:55:19.502 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:55:35.957 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:55:35.957 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:55:36.461 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:55:36.462 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:55:36.462 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:55:36.462 * Background saving started by pid 92
+13:M 12 Apr 02:55:36.465 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:55:36.465 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:55:36.465 * Waiting for end of BGSAVE for SYNC
+92:C 12 Apr 02:55:36.488 * DB saved on disk
+92:C 12 Apr 02:55:36.488 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:55:36.532 * Background saving terminated with success
+13:M 12 Apr 02:55:36.532 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:55:36.532 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:55:48.751 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:55:48.751 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:55:49.486 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:55:49.486 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:55:49.486 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:55:49.487 * Background saving started by pid 93
+13:M 12 Apr 02:55:49.488 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:55:49.488 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:55:49.488 * Waiting for end of BGSAVE for SYNC
+93:C 12 Apr 02:55:49.508 * DB saved on disk
+93:C 12 Apr 02:55:49.509 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:55:49.551 * Background saving terminated with success
+13:M 12 Apr 02:55:49.551 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:55:49.551 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:56:06.194 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:56:06.195 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:56:06.516 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:56:06.516 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:56:06.516 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:56:06.517 * Background saving started by pid 94
+13:M 12 Apr 02:56:06.519 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:56:06.519 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:56:06.519 * Waiting for end of BGSAVE for SYNC
+94:C 12 Apr 02:56:06.555 * DB saved on disk
+94:C 12 Apr 02:56:06.555 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:56:06.580 * Background saving terminated with success
+13:M 12 Apr 02:56:06.580 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:56:06.580 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:56:18.855 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:56:18.855 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:56:19.532 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:56:19.532 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:56:19.532 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:56:19.533 * Background saving started by pid 95
+13:M 12 Apr 02:56:19.534 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:56:19.534 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:56:19.534 * Waiting for end of BGSAVE for SYNC
+95:C 12 Apr 02:56:19.559 * DB saved on disk
+95:C 12 Apr 02:56:19.559 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:56:19.597 * Background saving terminated with success
+13:M 12 Apr 02:56:19.597 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:56:19.597 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:56:36.378 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:56:36.378 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:56:36.561 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:56:36.561 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:56:36.561 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:56:36.562 * Background saving started by pid 96
+13:M 12 Apr 02:56:36.563 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:56:36.563 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:56:36.564 * Waiting for end of BGSAVE for SYNC
+96:C 12 Apr 02:56:36.595 * DB saved on disk
+96:C 12 Apr 02:56:36.595 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:56:36.624 * Background saving terminated with success
+13:M 12 Apr 02:56:36.624 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:56:36.624 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:56:48.991 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:56:48.992 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:56:49.581 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:56:49.581 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:56:49.581 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:56:49.582 * Background saving started by pid 97
+13:M 12 Apr 02:56:49.584 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:56:49.584 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:56:49.584 * Waiting for end of BGSAVE for SYNC
+97:C 12 Apr 02:56:49.624 * DB saved on disk
+97:C 12 Apr 02:56:49.624 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:56:49.643 * Background saving terminated with success
+13:M 12 Apr 02:56:49.643 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:56:49.643 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:57:06.489 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:57:06.489 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:57:06.608 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:57:06.608 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:57:06.608 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:57:06.608 * Background saving started by pid 98
+13:M 12 Apr 02:57:06.609 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:57:06.609 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:57:06.609 * Waiting for end of BGSAVE for SYNC
+98:C 12 Apr 02:57:06.628 * DB saved on disk
+98:C 12 Apr 02:57:06.629 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:57:06.673 * Background saving terminated with success
+13:M 12 Apr 02:57:06.673 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:57:06.673 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:57:19.158 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:57:19.158 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:57:19.631 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:57:19.631 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:57:19.631 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:57:19.632 * Background saving started by pid 99
+13:M 12 Apr 02:57:19.634 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:57:19.634 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:57:19.634 * Waiting for end of BGSAVE for SYNC
+99:C 12 Apr 02:57:19.683 * DB saved on disk
+99:C 12 Apr 02:57:19.683 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 02:57:19.697 * Background saving terminated with success
+13:M 12 Apr 02:57:19.697 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:57:19.698 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:57:36.678 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:57:36.678 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:57:37.660 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:57:37.660 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:57:37.660 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:57:37.661 * Background saving started by pid 100
+13:M 12 Apr 02:57:37.663 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:57:37.663 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:57:37.663 * Waiting for end of BGSAVE for SYNC
+100:C 12 Apr 02:57:37.701 * DB saved on disk
+100:C 12 Apr 02:57:37.702 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:57:37.721 * Background saving terminated with success
+13:M 12 Apr 02:57:37.721 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:57:37.721 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:57:49.351 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:57:49.351 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:57:49.675 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:57:49.675 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:57:49.675 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:57:49.675 * Background saving started by pid 101
+13:M 12 Apr 02:57:49.688 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:57:49.688 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:57:49.688 * Waiting for end of BGSAVE for SYNC
+101:C 12 Apr 02:57:49.714 * DB saved on disk
+101:C 12 Apr 02:57:49.714 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:57:49.745 * Background saving terminated with success
+13:M 12 Apr 02:57:49.745 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:57:49.745 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:58:06.802 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:58:06.802 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:58:07.704 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:58:07.704 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:58:07.704 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:58:07.705 * Background saving started by pid 102
+13:M 12 Apr 02:58:07.718 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:58:07.718 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:58:07.718 * Waiting for end of BGSAVE for SYNC
+102:C 12 Apr 02:58:07.725 * DB saved on disk
+102:C 12 Apr 02:58:07.725 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:58:07.775 * Background saving terminated with success
+13:M 12 Apr 02:58:07.775 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:58:07.775 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:58:19.434 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:58:19.434 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:58:19.722 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:58:19.722 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:58:19.722 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:58:19.722 * Background saving started by pid 103
+13:M 12 Apr 02:58:19.742 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:58:19.742 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:58:19.742 * Waiting for end of BGSAVE for SYNC
+103:C 12 Apr 02:58:19.762 * DB saved on disk
+103:C 12 Apr 02:58:19.763 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:58:19.793 * Background saving terminated with success
+13:M 12 Apr 02:58:19.794 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:58:19.794 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:58:36.977 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:58:36.977 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:58:37.751 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:58:37.751 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:58:37.751 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:58:37.752 * Background saving started by pid 104
+13:M 12 Apr 02:58:37.770 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:58:37.770 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:58:37.771 * Waiting for end of BGSAVE for SYNC
+104:C 12 Apr 02:58:37.782 * DB saved on disk
+104:C 12 Apr 02:58:37.782 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:58:37.825 * Background saving terminated with success
+13:M 12 Apr 02:58:37.825 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:58:37.825 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:58:49.562 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:58:49.562 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:58:49.769 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:58:49.769 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:58:49.769 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:58:49.769 * Background saving started by pid 105
+13:M 12 Apr 02:58:49.787 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:58:49.787 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:58:49.787 * Waiting for end of BGSAVE for SYNC
+105:C 12 Apr 02:58:49.811 * DB saved on disk
+105:C 12 Apr 02:58:49.811 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:58:49.853 * Background saving terminated with success
+13:M 12 Apr 02:58:49.853 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:58:49.853 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:59:07.041 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:59:07.042 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:59:07.797 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:59:07.797 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:59:07.797 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:59:07.798 * Background saving started by pid 106
+13:M 12 Apr 02:59:07.819 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:59:07.819 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:59:07.819 * Waiting for end of BGSAVE for SYNC
+106:C 12 Apr 02:59:07.823 * DB saved on disk
+106:C 12 Apr 02:59:07.824 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:59:07.878 * Background saving terminated with success
+13:M 12 Apr 02:59:07.878 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:59:07.879 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:59:19.725 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:59:19.725 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:59:19.814 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:59:19.814 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:59:19.814 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:59:19.814 * Background saving started by pid 107
+13:M 12 Apr 02:59:19.840 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:59:19.840 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:59:19.840 * Waiting for end of BGSAVE for SYNC
+107:C 12 Apr 02:59:19.845 * DB saved on disk
+107:C 12 Apr 02:59:19.845 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:59:19.899 * Background saving terminated with success
+13:M 12 Apr 02:59:19.900 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 02:59:19.900 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:59:37.141 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 02:59:37.141 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 02:59:37.837 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 02:59:37.837 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 02:59:37.837 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:59:37.838 * Background saving started by pid 108
+108:C 12 Apr 02:59:37.864 * DB saved on disk
+108:C 12 Apr 02:59:37.865 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:59:37.867 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 02:59:37.867 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 02:59:37.867 * Waiting for end of BGSAVE for SYNC
+13:M 12 Apr 02:59:37.925 * Background saving terminated with success
+13:M 12 Apr 02:59:37.925 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 02:59:37.925 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 02:59:49.879 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 02:59:49.880 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 02:59:49.887 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 02:59:49.887 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 02:59:49.887 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:59:49.888 * Background saving started by pid 109
+109:C 12 Apr 02:59:49.912 * DB saved on disk
+109:C 12 Apr 02:59:49.912 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:59:49.942 * Background saving terminated with success
+13:M 12 Apr 02:59:49.942 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 02:59:50.857 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 02:59:50.857 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 02:59:50.857 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 02:59:50.857 * Background saving started by pid 110
+110:C 12 Apr 02:59:50.887 * DB saved on disk
+110:C 12 Apr 02:59:50.887 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 02:59:50.944 * Background saving terminated with success
+13:M 12 Apr 02:59:50.944 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:00:07.183 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:00:07.183 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:00:07.882 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:00:07.882 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:00:07.882 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:00:07.883 * Background saving started by pid 111
+111:C 12 Apr 03:00:07.914 * DB saved on disk
+111:C 12 Apr 03:00:07.915 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:00:07.916 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:00:07.916 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:00:07.916 * Waiting for end of BGSAVE for SYNC
+13:M 12 Apr 03:00:07.969 * Background saving terminated with success
+13:M 12 Apr 03:00:07.969 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:00:07.969 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:00:20.061 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:00:20.061 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:00:20.905 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:00:20.905 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:00:20.905 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:00:20.905 * Background saving started by pid 112
+112:C 12 Apr 03:00:20.927 * DB saved on disk
+112:C 12 Apr 03:00:20.927 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:00:20.938 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:00:20.938 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:00:20.938 * Waiting for end of BGSAVE for SYNC
+13:M 12 Apr 03:00:20.985 * Background saving terminated with success
+13:M 12 Apr 03:00:20.985 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:00:20.985 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:00:37.306 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:00:37.306 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:00:37.937 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:00:37.937 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:00:37.937 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:00:37.937 * Background saving started by pid 113
+113:C 12 Apr 03:00:37.963 * DB saved on disk
+113:C 12 Apr 03:00:37.963 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:00:37.965 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:00:37.965 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:00:37.965 * Waiting for end of BGSAVE for SYNC
+13:M 12 Apr 03:00:38.007 * Background saving terminated with success
+13:M 12 Apr 03:00:38.007 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:00:38.007 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:00:50.166 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:00:50.166 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:00:50.961 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:00:50.961 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:00:50.961 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:00:50.962 * Background saving started by pid 114
+13:M 12 Apr 03:00:50.985 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:00:50.985 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:00:50.985 * Waiting for end of BGSAVE for SYNC
+114:C 12 Apr 03:00:50.993 * DB saved on disk
+114:C 12 Apr 03:00:50.994 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:00:51.030 * Background saving terminated with success
+13:M 12 Apr 03:00:51.030 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:00:51.030 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:01:07.466 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:01:07.466 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:01:07.991 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:01:07.991 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:01:07.991 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:01:07.992 * Background saving started by pid 115
+13:M 12 Apr 03:01:08.012 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:01:08.012 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:01:08.012 * Waiting for end of BGSAVE for SYNC
+115:C 12 Apr 03:01:08.030 * DB saved on disk
+115:C 12 Apr 03:01:08.030 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:01:08.060 * Background saving terminated with success
+13:M 12 Apr 03:01:08.060 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:01:08.060 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:01:20.318 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:01:20.318 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:01:21.010 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:01:21.010 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:01:21.010 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:01:21.011 * Background saving started by pid 116
+13:M 12 Apr 03:01:21.031 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:01:21.031 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:01:21.031 * Waiting for end of BGSAVE for SYNC
+116:C 12 Apr 03:01:21.059 * DB saved on disk
+116:C 12 Apr 03:01:21.059 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:01:21.079 * Background saving terminated with success
+13:M 12 Apr 03:01:21.080 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:01:21.080 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:01:37.594 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:01:37.595 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:01:38.040 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:01:38.040 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:01:38.040 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:01:38.041 * Background saving started by pid 117
+13:M 12 Apr 03:01:38.055 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:01:38.055 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:01:38.055 * Waiting for end of BGSAVE for SYNC
+117:C 12 Apr 03:01:38.071 * DB saved on disk
+117:C 12 Apr 03:01:38.072 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:01:38.100 * Background saving terminated with success
+13:M 12 Apr 03:01:38.100 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:01:38.100 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:01:50.371 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:01:50.371 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:01:51.058 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:01:51.058 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:01:51.058 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:01:51.058 * Background saving started by pid 118
+13:M 12 Apr 03:01:51.073 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:01:51.073 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:01:51.073 * Waiting for end of BGSAVE for SYNC
+118:C 12 Apr 03:01:51.092 * DB saved on disk
+118:C 12 Apr 03:01:51.092 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:01:51.118 * Background saving terminated with success
+13:M 12 Apr 03:01:51.118 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:01:51.118 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:02:07.904 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:02:07.905 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:02:08.082 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:02:08.082 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:02:08.082 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:02:08.083 * Background saving started by pid 119
+13:M 12 Apr 03:02:08.095 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:02:08.095 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:02:08.096 * Waiting for end of BGSAVE for SYNC
+119:C 12 Apr 03:02:08.103 * DB saved on disk
+119:C 12 Apr 03:02:08.104 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:02:08.143 * Background saving terminated with success
+13:M 12 Apr 03:02:08.143 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:02:08.143 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:02:20.572 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:02:20.572 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:02:21.105 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:02:21.105 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:02:21.105 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:02:21.105 * Background saving started by pid 120
+13:M 12 Apr 03:02:21.114 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:02:21.114 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:02:21.114 * Waiting for end of BGSAVE for SYNC
+120:C 12 Apr 03:02:21.141 * DB saved on disk
+120:C 12 Apr 03:02:21.141 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:02:21.167 * Background saving terminated with success
+13:M 12 Apr 03:02:21.168 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:02:21.168 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:02:38.065 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:02:38.065 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:02:38.120 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:02:38.120 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:02:38.120 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:02:38.121 * Background saving started by pid 121
+13:M 12 Apr 03:02:38.143 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:02:38.144 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:02:38.144 * Waiting for end of BGSAVE for SYNC
+121:C 12 Apr 03:02:38.146 * DB saved on disk
+121:C 12 Apr 03:02:38.146 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:02:38.197 * Background saving terminated with success
+13:M 12 Apr 03:02:38.197 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:02:38.197 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:02:50.683 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:02:50.683 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:02:51.140 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:02:51.140 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:02:51.140 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:02:51.141 * Background saving started by pid 122
+122:C 12 Apr 03:02:51.159 * DB saved on disk
+122:C 12 Apr 03:02:51.160 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:02:51.167 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:02:51.168 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:02:51.168 * Waiting for end of BGSAVE for SYNC
+13:M 12 Apr 03:02:51.214 * Background saving terminated with success
+13:M 12 Apr 03:02:51.214 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:02:51.214 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:03:08.165 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:03:08.165 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:03:08.192 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:03:08.192 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:03:08.192 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:03:08.192 * Background saving started by pid 123
+123:C 12 Apr 03:03:08.231 * DB saved on disk
+123:C 12 Apr 03:03:08.231 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:03:08.240 * Background saving terminated with success
+13:M 12 Apr 03:03:08.240 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:03:09.163 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:03:09.163 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:03:09.163 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:03:09.164 * Background saving started by pid 124
+124:C 12 Apr 03:03:09.197 * DB saved on disk
+124:C 12 Apr 03:03:09.198 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:03:09.241 * Background saving terminated with success
+13:M 12 Apr 03:03:09.241 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:03:20.848 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:03:20.848 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:03:21.180 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:03:21.180 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:03:21.180 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:03:21.181 * Background saving started by pid 125
+13:M 12 Apr 03:03:21.212 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:03:21.212 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:03:21.212 * Waiting for end of BGSAVE for SYNC
+125:C 12 Apr 03:03:21.228 * DB saved on disk
+125:C 12 Apr 03:03:21.228 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:03:21.257 * Background saving terminated with success
+13:M 12 Apr 03:03:21.257 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:03:21.257 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:03:38.317 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:03:38.317 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:03:39.207 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:03:39.207 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:03:39.207 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:03:39.208 * Background saving started by pid 126
+13:M 12 Apr 03:03:39.238 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:03:39.238 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:03:39.238 * Waiting for end of BGSAVE for SYNC
+126:C 12 Apr 03:03:39.238 * DB saved on disk
+126:C 12 Apr 03:03:39.239 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:03:39.283 * Background saving terminated with success
+13:M 12 Apr 03:03:39.283 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:03:39.283 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:03:50.902 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:03:50.902 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:03:51.229 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:03:51.229 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:03:51.229 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:03:51.230 * Background saving started by pid 127
+127:C 12 Apr 03:03:51.243 * DB saved on disk
+127:C 12 Apr 03:03:51.243 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:03:51.257 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:03:51.257 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:03:51.257 * Waiting for end of BGSAVE for SYNC
+13:M 12 Apr 03:03:51.302 * Background saving terminated with success
+13:M 12 Apr 03:03:51.302 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:03:51.302 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:04:08.602 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:04:08.602 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:04:09.259 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:04:09.259 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:04:09.259 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:04:09.259 * Background saving started by pid 128
+13:M 12 Apr 03:04:09.282 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:04:09.283 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:04:09.283 * Waiting for end of BGSAVE for SYNC
+128:C 12 Apr 03:04:09.289 * DB saved on disk
+128:C 12 Apr 03:04:09.289 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:04:09.334 * Background saving terminated with success
+13:M 12 Apr 03:04:09.334 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:04:09.334 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:04:21.036 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:04:21.036 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:04:21.283 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:04:21.283 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:04:21.283 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:04:21.284 * Background saving started by pid 129
+13:M 12 Apr 03:04:21.299 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:04:21.299 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:04:21.299 * Waiting for end of BGSAVE for SYNC
+129:C 12 Apr 03:04:21.318 * DB saved on disk
+129:C 12 Apr 03:04:21.318 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:04:21.356 * Background saving terminated with success
+13:M 12 Apr 03:04:21.356 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:04:21.356 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:04:38.748 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:04:38.748 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:04:39.309 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:04:39.309 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:04:39.309 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:04:39.310 * Background saving started by pid 130
+13:M 12 Apr 03:04:39.325 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:04:39.325 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:04:39.325 * Waiting for end of BGSAVE for SYNC
+130:C 12 Apr 03:04:39.345 * DB saved on disk
+130:C 12 Apr 03:04:39.345 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:04:39.386 * Background saving terminated with success
+13:M 12 Apr 03:04:39.386 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:04:39.386 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:04:51.122 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:04:51.122 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:04:51.328 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:04:51.328 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:04:51.328 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:04:51.329 * Background saving started by pid 131
+13:M 12 Apr 03:04:51.347 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:04:51.347 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:04:51.347 * Waiting for end of BGSAVE for SYNC
+131:C 12 Apr 03:04:51.399 * DB saved on disk
+131:C 12 Apr 03:04:51.400 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:04:51.404 * Background saving terminated with success
+13:M 12 Apr 03:04:51.404 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:04:51.404 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:05:08.824 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:05:08.824 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:05:09.357 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:05:09.357 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:05:09.357 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:05:09.357 * Background saving started by pid 132
+13:M 12 Apr 03:05:09.373 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:05:09.373 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:05:09.373 * Waiting for end of BGSAVE for SYNC
+132:C 12 Apr 03:05:09.379 * DB saved on disk
+132:C 12 Apr 03:05:09.379 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:05:09.434 * Background saving terminated with success
+13:M 12 Apr 03:05:09.434 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:05:09.434 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:05:21.160 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:05:21.364 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:05:21.381 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:05:21.381 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:05:21.381 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:05:21.382 * Background saving started by pid 133
+13:M 12 Apr 03:05:21.387 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:05:21.387 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:05:21.387 * Waiting for end of BGSAVE for SYNC
+133:C 12 Apr 03:05:21.417 * DB saved on disk
+133:C 12 Apr 03:05:21.418 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:05:21.449 * Background saving terminated with success
+13:M 12 Apr 03:05:21.449 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:05:21.450 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:05:38.943 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:05:38.943 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:05:39.408 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:05:39.408 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:05:39.408 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:05:39.409 * Background saving started by pid 134
+13:M 12 Apr 03:05:39.414 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:05:39.414 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:05:39.414 * Waiting for end of BGSAVE for SYNC
+134:C 12 Apr 03:05:39.463 * DB saved on disk
+134:C 12 Apr 03:05:39.463 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:05:39.481 * Background saving terminated with success
+13:M 12 Apr 03:05:39.481 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:05:39.481 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:05:51.365 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:05:51.429 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:05:51.429 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:05:51.429 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:05:51.430 * Background saving started by pid 135
+135:C 12 Apr 03:05:51.459 * DB saved on disk
+135:C 12 Apr 03:05:51.460 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:05:51.496 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:05:51.498 * Background saving terminated with success
+13:M 12 Apr 03:05:51.498 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:05:52.431 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:05:52.431 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:05:52.432 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:05:52.432 * Background saving started by pid 136
+136:C 12 Apr 03:05:52.460 * DB saved on disk
+136:C 12 Apr 03:05:52.460 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:05:52.499 * Background saving terminated with success
+13:M 12 Apr 03:05:52.500 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:06:09.039 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:06:09.039 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:06:09.461 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:06:09.461 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:06:09.461 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:06:09.462 * Background saving started by pid 137
+13:M 12 Apr 03:06:09.463 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:06:09.463 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:06:09.463 * Waiting for end of BGSAVE for SYNC
+137:C 12 Apr 03:06:09.497 * DB saved on disk
+137:C 12 Apr 03:06:09.497 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:06:09.525 * Background saving terminated with success
+13:M 12 Apr 03:06:09.525 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:06:09.526 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:06:21.508 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:06:21.626 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:06:22.479 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:06:22.479 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:06:22.479 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:06:22.480 * Background saving started by pid 138
+13:M 12 Apr 03:06:22.481 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:06:22.481 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:06:22.481 * Waiting for end of BGSAVE for SYNC
+138:C 12 Apr 03:06:22.519 * DB saved on disk
+138:C 12 Apr 03:06:22.520 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:06:22.543 * Background saving terminated with success
+13:M 12 Apr 03:06:22.543 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:06:22.543 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:06:39.117 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:06:39.117 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:06:39.507 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:06:39.507 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:06:39.507 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:06:39.508 * Background saving started by pid 139
+13:M 12 Apr 03:06:39.508 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:06:39.508 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:06:39.508 * Waiting for end of BGSAVE for SYNC
+139:C 12 Apr 03:06:39.531 * DB saved on disk
+139:C 12 Apr 03:06:39.532 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:06:39.577 * Background saving terminated with success
+13:M 12 Apr 03:06:39.577 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:06:39.577 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:06:51.615 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:06:51.737 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:06:52.532 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:06:52.532 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:06:52.532 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:06:52.533 * Background saving started by pid 140
+13:M 12 Apr 03:06:52.537 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:06:52.537 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:06:52.537 * Waiting for end of BGSAVE for SYNC
+140:C 12 Apr 03:06:52.569 * DB saved on disk
+140:C 12 Apr 03:06:52.570 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:06:52.595 * Background saving terminated with success
+13:M 12 Apr 03:06:52.595 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:06:52.595 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:07:09.242 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:07:09.242 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:07:09.562 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:07:09.562 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:07:09.562 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:07:09.563 * Background saving started by pid 141
+13:M 12 Apr 03:07:09.564 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:07:09.564 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:07:09.564 * Waiting for end of BGSAVE for SYNC
+141:C 12 Apr 03:07:09.599 * DB saved on disk
+141:C 12 Apr 03:07:09.600 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:07:09.619 * Background saving terminated with success
+13:M 12 Apr 03:07:09.619 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:07:09.619 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:07:21.653 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:07:21.986 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:07:22.577 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:07:22.577 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:07:22.577 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:07:22.578 * Background saving started by pid 142
+13:M 12 Apr 03:07:22.579 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:07:22.580 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:07:22.580 * Waiting for end of BGSAVE for SYNC
+142:C 12 Apr 03:07:22.614 * DB saved on disk
+142:C 12 Apr 03:07:22.615 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:07:22.640 * Background saving terminated with success
+13:M 12 Apr 03:07:22.640 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:07:22.640 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:07:39.578 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:07:39.578 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:07:39.609 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:07:39.609 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:07:39.609 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:07:39.609 * Background saving started by pid 143
+13:M 12 Apr 03:07:39.610 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:07:39.610 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:07:39.610 * Waiting for end of BGSAVE for SYNC
+143:C 12 Apr 03:07:39.635 * DB saved on disk
+143:C 12 Apr 03:07:39.636 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:07:39.672 * Background saving terminated with success
+13:M 12 Apr 03:07:39.672 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:07:39.672 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:07:51.791 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:07:52.116 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:07:52.630 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:07:52.630 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:07:52.630 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:07:52.631 * Background saving started by pid 144
+13:M 12 Apr 03:07:52.631 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:07:52.631 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:07:52.631 * Waiting for end of BGSAVE for SYNC
+144:C 12 Apr 03:07:52.665 * DB saved on disk
+144:C 12 Apr 03:07:52.666 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:07:52.691 * Background saving terminated with success
+13:M 12 Apr 03:07:52.692 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:07:52.692 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:08:09.788 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:08:09.789 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:08:10.653 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:08:10.653 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:08:10.654 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:08:10.654 * Background saving started by pid 145
+13:M 12 Apr 03:08:10.662 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:08:10.662 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:08:10.662 * Waiting for end of BGSAVE for SYNC
+145:C 12 Apr 03:08:10.677 * DB saved on disk
+145:C 12 Apr 03:08:10.678 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:08:10.721 * Background saving terminated with success
+13:M 12 Apr 03:08:10.721 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:08:10.721 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:08:21.925 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:08:22.219 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:08:22.670 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:08:22.670 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:08:22.670 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:08:22.671 * Background saving started by pid 146
+13:M 12 Apr 03:08:22.683 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:08:22.683 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:08:22.683 * Waiting for end of BGSAVE for SYNC
+146:C 12 Apr 03:08:22.709 * DB saved on disk
+146:C 12 Apr 03:08:22.709 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:08:22.746 * Background saving terminated with success
+13:M 12 Apr 03:08:22.746 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:08:22.746 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:08:39.990 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:08:39.990 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:08:40.696 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:08:40.697 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:08:40.697 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:08:40.697 * Background saving started by pid 147
+13:M 12 Apr 03:08:40.716 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:08:40.716 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:08:40.716 * Waiting for end of BGSAVE for SYNC
+147:C 12 Apr 03:08:40.729 * DB saved on disk
+147:C 12 Apr 03:08:40.730 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:08:40.772 * Background saving terminated with success
+13:M 12 Apr 03:08:40.772 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:08:40.772 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:08:52.053 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:08:52.365 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:08:52.714 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:08:52.715 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:08:52.715 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:08:52.715 * Background saving started by pid 148
+13:M 12 Apr 03:08:52.736 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:08:52.736 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:08:52.736 * Waiting for end of BGSAVE for SYNC
+148:C 12 Apr 03:08:52.753 * DB saved on disk
+148:C 12 Apr 03:08:52.753 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:08:52.792 * Background saving terminated with success
+13:M 12 Apr 03:08:52.792 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:08:52.792 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:09:10.120 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:09:10.120 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:09:10.749 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:09:10.749 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:09:10.749 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:09:10.749 * Background saving started by pid 149
+13:M 12 Apr 03:09:10.763 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:09:10.763 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:09:10.763 * Waiting for end of BGSAVE for SYNC
+149:C 12 Apr 03:09:10.781 * DB saved on disk
+149:C 12 Apr 03:09:10.782 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:09:10.820 * Background saving terminated with success
+13:M 12 Apr 03:09:10.820 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:09:10.820 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:09:22.139 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:09:22.580 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:09:22.762 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:09:22.762 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:09:22.762 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:09:22.763 * Background saving started by pid 150
+13:M 12 Apr 03:09:22.778 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:09:22.778 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:09:22.778 * Waiting for end of BGSAVE for SYNC
+150:C 12 Apr 03:09:22.796 * DB saved on disk
+150:C 12 Apr 03:09:22.796 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:09:22.835 * Background saving terminated with success
+13:M 12 Apr 03:09:22.835 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:09:22.835 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:09:40.418 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:09:40.419 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:09:40.791 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:09:40.791 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:09:40.791 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:09:40.792 * Background saving started by pid 151
+13:M 12 Apr 03:09:40.805 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:09:40.805 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:09:40.805 * Waiting for end of BGSAVE for SYNC
+151:C 12 Apr 03:09:40.817 * DB saved on disk
+151:C 12 Apr 03:09:40.818 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:09:40.860 * Background saving terminated with success
+13:M 12 Apr 03:09:40.860 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:09:40.861 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:09:52.274 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:09:52.689 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:09:52.809 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:09:52.809 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:09:52.809 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:09:52.810 * Background saving started by pid 152
+13:M 12 Apr 03:09:52.824 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:09:52.824 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:09:52.825 * Waiting for end of BGSAVE for SYNC
+152:C 12 Apr 03:09:52.840 * DB saved on disk
+152:C 12 Apr 03:09:52.840 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:09:52.880 * Background saving terminated with success
+13:M 12 Apr 03:09:52.880 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:09:52.880 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:10:10.705 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:10:10.705 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:10:10.838 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:10:10.838 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:10:10.838 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:10:10.838 * Background saving started by pid 153
+13:M 12 Apr 03:10:10.845 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:10:10.845 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:10:10.845 * Waiting for end of BGSAVE for SYNC
+153:C 12 Apr 03:10:10.870 * DB saved on disk
+153:C 12 Apr 03:10:10.871 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:10:10.911 * Background saving terminated with success
+13:M 12 Apr 03:10:10.911 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:10:10.911 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:10:22.418 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:10:22.758 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:10:22.853 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:10:22.853 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:10:22.853 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:10:22.854 * Background saving started by pid 154
+13:M 12 Apr 03:10:22.863 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:10:22.863 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:10:22.863 * Waiting for end of BGSAVE for SYNC
+154:C 12 Apr 03:10:22.901 * DB saved on disk
+154:C 12 Apr 03:10:22.901 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:10:22.928 * Background saving terminated with success
+13:M 12 Apr 03:10:22.928 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:10:22.928 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:10:40.948 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:10:40.948 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:10:41.882 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:10:41.882 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:10:41.882 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:10:41.883 * Background saving started by pid 155
+13:M 12 Apr 03:10:41.897 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:10:41.897 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:10:41.897 * Waiting for end of BGSAVE for SYNC
+155:C 12 Apr 03:10:41.922 * DB saved on disk
+155:C 12 Apr 03:10:41.922 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:10:41.965 * Background saving terminated with success
+13:M 12 Apr 03:10:41.965 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:10:41.965 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:10:52.534 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:10:52.843 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:10:52.896 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:10:52.896 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:10:52.896 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:10:52.896 * Background saving started by pid 156
+13:M 12 Apr 03:10:52.916 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:10:52.916 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:10:52.916 * Waiting for end of BGSAVE for SYNC
+156:C 12 Apr 03:10:52.919 * DB saved on disk
+156:C 12 Apr 03:10:52.920 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:10:52.981 * Background saving terminated with success
+13:M 12 Apr 03:10:52.981 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:10:52.981 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:11:11.068 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:11:11.068 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:11:11.928 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:11:11.928 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:11:11.928 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:11:11.929 * Background saving started by pid 157
+13:M 12 Apr 03:11:11.943 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:11:11.943 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:11:11.943 * Waiting for end of BGSAVE for SYNC
+157:C 12 Apr 03:11:11.948 * DB saved on disk
+157:C 12 Apr 03:11:11.949 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:11:12.011 * Background saving terminated with success
+13:M 12 Apr 03:11:12.011 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:11:12.011 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:11:22.632 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:11:22.939 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:11:22.946 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:11:22.946 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:11:22.946 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:11:22.947 * Background saving started by pid 158
+13:M 12 Apr 03:11:22.962 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:11:22.962 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:11:22.962 * Waiting for end of BGSAVE for SYNC
+158:C 12 Apr 03:11:22.989 * DB saved on disk
+158:C 12 Apr 03:11:22.989 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:11:23.030 * Background saving terminated with success
+13:M 12 Apr 03:11:23.030 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:11:23.030 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:11:41.237 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:11:41.237 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:11:41.978 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:11:41.978 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:11:41.978 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:11:41.979 * Background saving started by pid 159
+13:M 12 Apr 03:11:41.989 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:11:41.989 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:11:41.989 * Waiting for end of BGSAVE for SYNC
+159:C 12 Apr 03:11:42.010 * DB saved on disk
+159:C 12 Apr 03:11:42.011 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:11:42.060 * Background saving terminated with success
+13:M 12 Apr 03:11:42.061 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:11:42.061 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:11:52.714 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:11:53.001 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:11:53.001 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:11:53.001 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:11:53.002 * Background saving started by pid 160
+160:C 12 Apr 03:11:53.034 * DB saved on disk
+160:C 12 Apr 03:11:53.035 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:11:53.080 * Background saving terminated with success
+13:M 12 Apr 03:11:53.081 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:11:53.110 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:11:53.997 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:11:53.997 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:11:53.997 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:11:53.998 * Background saving started by pid 161
+161:C 12 Apr 03:11:54.026 * DB saved on disk
+161:C 12 Apr 03:11:54.026 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:11:54.081 * Background saving terminated with success
+13:M 12 Apr 03:11:54.081 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:12:11.540 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:12:11.540 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:12:12.023 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:12:12.023 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:12:12.023 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:12:12.024 * Background saving started by pid 162
+13:M 12 Apr 03:12:12.036 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:12:12.036 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:12:12.036 * Waiting for end of BGSAVE for SYNC
+162:C 12 Apr 03:12:12.056 * DB saved on disk
+162:C 12 Apr 03:12:12.056 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:12:12.109 * Background saving terminated with success
+13:M 12 Apr 03:12:12.110 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:12:12.110 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:12:22.880 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:12:23.056 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:12:23.056 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:12:23.056 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:12:23.056 * Background saving started by pid 163
+163:C 12 Apr 03:12:23.096 * DB saved on disk
+163:C 12 Apr 03:12:23.096 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:12:23.131 * Background saving terminated with success
+13:M 12 Apr 03:12:23.131 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:12:23.159 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:12:24.043 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:12:24.043 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:12:24.043 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:12:24.044 * Background saving started by pid 164
+164:C 12 Apr 03:12:24.070 * DB saved on disk
+164:C 12 Apr 03:12:24.071 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:12:24.131 * Background saving terminated with success
+13:M 12 Apr 03:12:24.131 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:12:41.608 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:12:41.608 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:12:42.068 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:12:42.068 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:12:42.068 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:12:42.069 * Background saving started by pid 165
+13:M 12 Apr 03:12:42.089 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:12:42.089 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:12:42.089 * Waiting for end of BGSAVE for SYNC
+165:C 12 Apr 03:12:42.100 * DB saved on disk
+165:C 12 Apr 03:12:42.101 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:12:42.158 * Background saving terminated with success
+13:M 12 Apr 03:12:42.158 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:12:42.158 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:12:52.971 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:12:53.108 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:12:53.108 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:12:53.108 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:12:53.108 * Background saving started by pid 166
+166:C 12 Apr 03:12:53.141 * DB saved on disk
+166:C 12 Apr 03:12:53.141 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:12:53.173 * Background saving terminated with success
+13:M 12 Apr 03:12:53.173 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:12:53.323 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:12:54.085 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:12:54.085 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:12:54.086 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:12:54.086 * Background saving started by pid 167
+167:C 12 Apr 03:12:54.132 * DB saved on disk
+167:C 12 Apr 03:12:54.133 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:12:54.175 * Background saving terminated with success
+13:M 12 Apr 03:12:54.175 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:13:11.872 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:13:11.872 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:13:12.114 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:13:12.114 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:13:12.114 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:13:12.115 * Background saving started by pid 168
+13:M 12 Apr 03:13:12.145 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:13:12.145 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:13:12.145 * Waiting for end of BGSAVE for SYNC
+168:C 12 Apr 03:13:12.188 * DB saved on disk
+168:C 12 Apr 03:13:12.188 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:13:12.207 * Background saving terminated with success
+13:M 12 Apr 03:13:12.207 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:13:12.208 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:13:23.097 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:13:23.158 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:13:23.158 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:13:23.158 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:13:23.158 * Background saving started by pid 169
+169:C 12 Apr 03:13:23.195 * DB saved on disk
+169:C 12 Apr 03:13:23.196 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:13:23.227 * Background saving terminated with success
+13:M 12 Apr 03:13:23.227 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:13:23.413 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:13:24.125 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:13:24.125 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:13:24.125 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:13:24.126 * Background saving started by pid 170
+170:C 12 Apr 03:13:24.145 * DB saved on disk
+170:C 12 Apr 03:13:24.146 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:13:24.229 * Background saving terminated with success
+13:M 12 Apr 03:13:24.230 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:13:42.118 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:13:42.118 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:13:42.157 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:13:42.157 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:13:42.157 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:13:42.157 * Background saving started by pid 171
+171:C 12 Apr 03:13:42.177 * DB saved on disk
+171:C 12 Apr 03:13:42.177 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:13:42.182 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:13:42.182 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:13:42.182 * Waiting for end of BGSAVE for SYNC
+13:M 12 Apr 03:13:42.260 * Background saving terminated with success
+13:M 12 Apr 03:13:42.260 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:13:42.260 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:13:53.267 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:13:53.541 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:13:54.172 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:13:54.172 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:13:54.172 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:13:54.173 * Background saving started by pid 172
+13:M 12 Apr 03:13:54.202 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:13:54.202 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:13:54.202 * Waiting for end of BGSAVE for SYNC
+172:C 12 Apr 03:13:54.216 * DB saved on disk
+172:C 12 Apr 03:13:54.217 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:13:54.282 * Background saving terminated with success
+13:M 12 Apr 03:13:54.282 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:13:54.282 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:14:12.715 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:14:12.715 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:14:13.205 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:14:13.205 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:14:13.205 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:14:13.206 * Background saving started by pid 173
+13:M 12 Apr 03:14:13.229 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:14:13.229 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:14:13.229 * Waiting for end of BGSAVE for SYNC
+173:C 12 Apr 03:14:13.239 * DB saved on disk
+173:C 12 Apr 03:14:13.239 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:14:13.312 * Background saving terminated with success
+13:M 12 Apr 03:14:13.312 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:14:13.312 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:14:23.655 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:14:23.655 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:14:24.229 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:14:24.229 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:14:24.229 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:14:24.230 * Background saving started by pid 174
+13:M 12 Apr 03:14:24.251 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:14:24.251 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:14:24.251 * Waiting for end of BGSAVE for SYNC
+174:C 12 Apr 03:14:24.270 * DB saved on disk
+174:C 12 Apr 03:14:24.271 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:14:24.326 * Background saving terminated with success
+13:M 12 Apr 03:14:24.326 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:14:24.326 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:14:43.336 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:14:43.336 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:14:44.265 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:14:44.265 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:14:44.265 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:14:44.265 * Background saving started by pid 175
+13:M 12 Apr 03:14:44.287 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:14:44.287 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:14:44.287 * Waiting for end of BGSAVE for SYNC
+175:C 12 Apr 03:14:44.343 * DB saved on disk
+175:C 12 Apr 03:14:44.343 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:14:44.367 * Background saving terminated with success
+13:M 12 Apr 03:14:44.367 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:14:44.367 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:14:53.921 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:14:53.922 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:14:54.282 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:14:54.282 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:14:54.282 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:14:54.283 * Background saving started by pid 176
+13:M 12 Apr 03:14:54.305 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:14:54.306 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:14:54.306 * Waiting for end of BGSAVE for SYNC
+176:C 12 Apr 03:14:54.316 * DB saved on disk
+176:C 12 Apr 03:14:54.317 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:14:54.380 * Background saving terminated with success
+13:M 12 Apr 03:14:54.380 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:14:54.380 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:15:13.881 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:15:13.882 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:15:14.303 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:15:14.303 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:15:14.303 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:15:14.303 * Background saving started by pid 177
+13:M 12 Apr 03:15:14.331 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:15:14.331 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:15:14.331 * Waiting for end of BGSAVE for SYNC
+177:C 12 Apr 03:15:14.339 * DB saved on disk
+177:C 12 Apr 03:15:14.339 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:15:14.402 * Background saving terminated with success
+13:M 12 Apr 03:15:14.402 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:15:14.402 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:15:24.050 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:15:24.050 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:15:24.317 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:15:24.317 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:15:24.317 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:15:24.318 * Background saving started by pid 178
+13:M 12 Apr 03:15:24.348 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:15:24.348 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:15:24.348 * Waiting for end of BGSAVE for SYNC
+178:C 12 Apr 03:15:24.354 * DB saved on disk
+178:C 12 Apr 03:15:24.354 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:15:24.419 * Background saving terminated with success
+13:M 12 Apr 03:15:24.419 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:15:24.419 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:15:44.136 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:15:44.136 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:15:44.348 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:15:44.348 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:15:44.348 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:15:44.348 * Background saving started by pid 179
+179:C 12 Apr 03:15:44.374 * DB saved on disk
+179:C 12 Apr 03:15:44.375 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:15:44.375 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:15:44.375 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:15:44.375 * Waiting for end of BGSAVE for SYNC
+13:M 12 Apr 03:15:44.455 * Background saving terminated with success
+13:M 12 Apr 03:15:44.455 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:15:44.455 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:16:00.053 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:16:00.054 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:16:00.372 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:16:00.372 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:16:00.372 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:16:00.372 * Background saving started by pid 180
+180:C 12 Apr 03:16:00.394 * DB saved on disk
+180:C 12 Apr 03:16:00.394 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:16:00.403 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:16:00.404 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:16:00.404 * Waiting for end of BGSAVE for SYNC
+13:M 12 Apr 03:16:00.478 * Background saving terminated with success
+13:M 12 Apr 03:16:00.478 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:16:00.478 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:16:14.196 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:16:14.196 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:16:14.392 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:16:14.392 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:16:14.392 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:16:14.393 * Background saving started by pid 181
+181:C 12 Apr 03:16:14.416 * DB saved on disk
+181:C 12 Apr 03:16:14.416 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:16:14.420 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:16:14.420 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:16:14.420 * Waiting for end of BGSAVE for SYNC
+13:M 12 Apr 03:16:14.499 * Background saving terminated with success
+13:M 12 Apr 03:16:14.499 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:16:14.499 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:16:24.282 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:16:24.282 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:16:24.410 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:16:24.410 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:16:24.410 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:16:24.410 * Background saving started by pid 182
+13:M 12 Apr 03:16:24.438 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:16:24.438 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:16:24.438 * Waiting for end of BGSAVE for SYNC
+182:C 12 Apr 03:16:24.439 * DB saved on disk
+182:C 12 Apr 03:16:24.440 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:16:24.509 * Background saving terminated with success
+13:M 12 Apr 03:16:24.509 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:16:24.509 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:16:44.535 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:16:44.535 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:16:45.440 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:16:45.440 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:16:45.440 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:16:45.441 * Background saving started by pid 185
+13:M 12 Apr 03:16:45.469 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:16:45.469 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:16:45.469 * Waiting for end of BGSAVE for SYNC
+185:C 12 Apr 03:16:45.510 * DB saved on disk
+185:C 12 Apr 03:16:45.510 * RDB: 4 MB of memory used by copy-on-write
+13:M 12 Apr 03:16:45.542 * Background saving terminated with success
+13:M 12 Apr 03:16:45.543 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:16:45.543 * Synchronization with slave 127.0.0.1:6382 succeeded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 13
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+13:M 12 Apr 03:17:18.384 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+13:M 12 Apr 03:17:18.384 # Server started, Redis version 3.0.6
+13:M 12 Apr 03:17:18.385 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+13:M 12 Apr 03:17:18.385 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+13:M 12 Apr 03:17:18.385 * DB loaded from disk: 0.000 seconds
+13:M 12 Apr 03:17:18.385 * The server is now ready to accept connections on port 6380
+13:M 12 Apr 03:17:21.391 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:17:21.391 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:17:21.391 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:17:21.391 * Background saving started by pid 22
+22:C 12 Apr 03:17:21.415 * DB saved on disk
+22:C 12 Apr 03:17:21.415 * RDB: 6 MB of memory used by copy-on-write
+13:M 12 Apr 03:17:21.490 * Background saving terminated with success
+13:M 12 Apr 03:17:21.490 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:17:24.395 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:17:24.395 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:17:24.396 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:17:24.396 * Background saving started by pid 37
+37:C 12 Apr 03:17:24.414 * DB saved on disk
+37:C 12 Apr 03:17:24.414 * RDB: 6 MB of memory used by copy-on-write
+13:M 12 Apr 03:17:24.497 * Background saving terminated with success
+13:M 12 Apr 03:17:24.497 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:17:40.449 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:17:40.449 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:17:41.420 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:17:41.420 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:17:41.420 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:17:41.421 * Background saving started by pid 56
+13:M 12 Apr 03:17:41.423 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:17:41.423 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:17:41.423 * Waiting for end of BGSAVE for SYNC
+56:C 12 Apr 03:17:41.458 * DB saved on disk
+56:C 12 Apr 03:17:41.459 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 03:17:41.518 * Background saving terminated with success
+13:M 12 Apr 03:17:41.518 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:17:41.518 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:17:57.538 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:17:57.538 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:17:58.446 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:17:58.446 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:17:58.446 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:17:58.447 * Background saving started by pid 57
+13:M 12 Apr 03:17:58.449 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:17:58.449 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:17:58.449 * Waiting for end of BGSAVE for SYNC
+57:C 12 Apr 03:17:58.476 * DB saved on disk
+57:C 12 Apr 03:17:58.476 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 03:17:58.541 * Background saving terminated with success
+13:M 12 Apr 03:17:58.541 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:17:58.541 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:18:10.552 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:18:10.552 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:18:11.462 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:18:11.462 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:18:11.462 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:18:11.463 * Background saving started by pid 58
+13:M 12 Apr 03:18:11.466 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:18:11.466 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:18:11.466 * Waiting for end of BGSAVE for SYNC
+58:C 12 Apr 03:18:11.494 * DB saved on disk
+58:C 12 Apr 03:18:11.494 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 03:18:11.557 * Background saving terminated with success
+13:M 12 Apr 03:18:11.557 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:18:11.558 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:18:27.775 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:18:27.775 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:18:28.479 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:18:28.479 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:18:28.479 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:18:28.480 * Background saving started by pid 59
+13:M 12 Apr 03:18:28.485 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:18:28.485 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:18:28.485 * Waiting for end of BGSAVE for SYNC
+59:C 12 Apr 03:18:28.514 * DB saved on disk
+59:C 12 Apr 03:18:28.514 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 03:18:28.577 * Background saving terminated with success
+13:M 12 Apr 03:18:28.577 * Synchronization with slave 127.0.0.1:6381 succeeded
+13:M 12 Apr 03:18:28.577 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:18:41.439 # Connection with slave 127.0.0.1:6382 lost.
+13:M 12 Apr 03:18:41.439 # Connection with slave 127.0.0.1:6381 lost.
+13:M 12 Apr 03:18:41.508 * Slave 172.17.0.1:6381 asks for synchronization
+13:M 12 Apr 03:18:41.508 * Full resync requested by slave 172.17.0.1:6381
+13:M 12 Apr 03:18:41.508 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:18:41.508 * Background saving started by pid 60
+13:M 12 Apr 03:18:41.510 * Slave 172.17.0.1:6382 asks for synchronization
+13:M 12 Apr 03:18:41.510 * Full resync requested by slave 172.17.0.1:6382
+13:M 12 Apr 03:18:41.510 * Waiting for end of BGSAVE for SYNC
+60:C 12 Apr 03:18:41.546 * DB saved on disk
+60:C 12 Apr 03:18:41.547 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 03:18:41.599 * Background saving terminated with success
+13:M 12 Apr 03:18:41.599 * Synchronization with slave 172.17.0.1:6381 succeeded
+13:M 12 Apr 03:18:41.599 * Synchronization with slave 172.17.0.1:6382 succeeded
+13:M 12 Apr 03:18:57.839 # Connection with slave 172.17.0.1:6382 lost.
+13:M 12 Apr 03:18:57.840 # Connection with slave 172.17.0.1:6381 lost.
+13:M 12 Apr 03:18:58.533 * Slave 127.0.0.1:6382 asks for synchronization
+13:M 12 Apr 03:18:58.533 * Full resync requested by slave 127.0.0.1:6382
+13:M 12 Apr 03:18:58.533 * Starting BGSAVE for SYNC with target: disk
+13:M 12 Apr 03:18:58.534 * Background saving started by pid 61
+13:M 12 Apr 03:18:58.537 * Slave 127.0.0.1:6381 asks for synchronization
+13:M 12 Apr 03:18:58.537 * Full resync requested by slave 127.0.0.1:6381
+13:M 12 Apr 03:18:58.538 * Waiting for end of BGSAVE for SYNC
+61:C 12 Apr 03:18:58.553 * DB saved on disk
+61:C 12 Apr 03:18:58.553 * RDB: 8 MB of memory used by copy-on-write
+13:M 12 Apr 03:18:58.626 * Background saving terminated with success
+13:M 12 Apr 03:18:58.626 * Synchronization with slave 127.0.0.1:6382 succeeded
+13:M 12 Apr 03:18:58.626 * Synchronization with slave 127.0.0.1:6381 succeeded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.6 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6380
+ |    `-._   `._    /     _.-'    |     PID: 12
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+12:M 12 Apr 03:21:35.452 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+12:M 12 Apr 03:21:35.452 # Server started, Redis version 3.0.6
+12:M 12 Apr 03:21:35.452 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+12:M 12 Apr 03:21:35.452 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+12:M 12 Apr 03:21:35.452 * DB loaded from disk: 0.000 seconds
+12:M 12 Apr 03:21:35.452 * The server is now ready to accept connections on port 6380
+12:M 12 Apr 03:21:38.457 * Slave 127.0.0.1:6381 asks for synchronization
+12:M 12 Apr 03:21:38.457 * Full resync requested by slave 127.0.0.1:6381
+12:M 12 Apr 03:21:38.457 * Starting BGSAVE for SYNC with target: disk
+12:M 12 Apr 03:21:38.458 * Background saving started by pid 21
+21:C 12 Apr 03:21:38.482 * DB saved on disk
+21:C 12 Apr 03:21:38.483 * RDB: 6 MB of memory used by copy-on-write
+12:M 12 Apr 03:21:38.558 * Background saving terminated with success
+12:M 12 Apr 03:21:38.558 * Synchronization with slave 127.0.0.1:6381 succeeded
+12:M 12 Apr 03:21:41.462 * Slave 127.0.0.1:6382 asks for synchronization
+12:M 12 Apr 03:21:41.462 * Full resync requested by slave 127.0.0.1:6382
+12:M 12 Apr 03:21:41.462 * Starting BGSAVE for SYNC with target: disk
+12:M 12 Apr 03:21:41.462 * Background saving started by pid 27
+27:C 12 Apr 03:21:41.490 * DB saved on disk
+27:C 12 Apr 03:21:41.490 * RDB: 6 MB of memory used by copy-on-write
+12:M 12 Apr 03:21:41.561 * Background saving terminated with success
+12:M 12 Apr 03:21:41.561 * Synchronization with slave 127.0.0.1:6382 succeeded
+12:M 12 Apr 03:21:54.593 # Connection with slave 127.0.0.1:6382 lost.
+12:M 12 Apr 03:21:54.593 # Connection with slave 127.0.0.1:6381 lost.
+12:M 12 Apr 03:21:55.484 * Slave 172.17.0.1:6382 asks for synchronization
+12:M 12 Apr 03:21:55.484 * Full resync requested by slave 172.17.0.1:6382
+12:M 12 Apr 03:21:55.485 * Starting BGSAVE for SYNC with target: disk
+12:M 12 Apr 03:21:55.485 * Background saving started by pid 44
+12:M 12 Apr 03:21:55.486 * Slave 172.17.0.1:6381 asks for synchronization
+12:M 12 Apr 03:21:55.486 * Full resync requested by slave 172.17.0.1:6381
+12:M 12 Apr 03:21:55.486 * Waiting for end of BGSAVE for SYNC
+44:C 12 Apr 03:21:55.526 * DB saved on disk
+44:C 12 Apr 03:21:55.526 * RDB: 8 MB of memory used by copy-on-write
+12:M 12 Apr 03:21:55.579 * Background saving terminated with success
+12:M 12 Apr 03:21:55.579 * Synchronization with slave 172.17.0.1:6382 succeeded
+12:M 12 Apr 03:21:55.579 * Synchronization with slave 172.17.0.1:6381 succeeded
