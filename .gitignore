@@ -1,0 +1,4 @@
+cluster/node1/db/*
+cluster/node2/db/*
+cluster/node3/db/*
+*.log
